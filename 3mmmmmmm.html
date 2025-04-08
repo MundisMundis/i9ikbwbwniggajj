@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Viktorīna</title>
+</head>
+<body>
+    <h2>JavaScript Viktorīna</h2>
+
+    <div>
+        <p>Cik daudz valstis ir pasaulē?</p>
+        <input type="text" id="q1">
+        <button onclick="checkAnswer('q1', '195')">Pārbaudīt</button>
+        <p id="feedback1"></p>
+    </div>
+
+    <div>
+        <p>Vai zeme ir apaļa?</p>
+        <input type="text" id="q2">
+        <button onclick="checkAnswer('q2', 'jā')">Pārbaudīt</button>
+        <p id="feedback2"></p>
+    </div>
+
+    <div>
+        <p>Cik kontinentu ir uz zemes?</p>
+        <input type="text" id="q3">
+        <button onclick="checkAnswer('q3', '7')">Pārbaudīt</button>
+        <p id="feedback3"></p>
+    </div>
+
+    <div>
+        <p>Cik valstis ir Eropā?</p>
+        <input type="text" id="q4">
+        <button onclick="checkAnswer('q4', '44')">Pārbaudīt</button>
+        <p id="feedback4"></p>
+    </div>
+
+    <div>
+        <p>Cik okeāni ir pasaulē?</p>
+        <input type="text" id="q5">
+        <button onclick="checkAnswer('q5', '5')">Pārbaudīt</button>
+        <p id="feedback5"></p>
+    </div>
+
+    <script>
+        function checkAnswer(questionId, correctAnswer) {
+            var answer = document.getElementById(questionId).value;
+            var feedback = document.getElementById('feedback' + questionId.slice(1));
+
+            if (answer.trim().toLowerCase() === correctAnswer.toLowerCase()) {
+                feedback.innerHTML = "Pareizi!";
+                feedback.style.color = "green";
+            } else {
+                feedback.innerHTML = "Nepareizi lohs esi ?, mēģini vēlreiz.";
+                feedback.style.color = "red";
+            }
+        }
+    </script>
+</body>
+</html>

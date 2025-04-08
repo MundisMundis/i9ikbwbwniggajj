@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <style>
+
+
+
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f2f2;
+    }
+
+    h1 {
+      color: #333;
+      margin-top: 50px;
+    }
+
+    .game-container {
+      margin-top: 20px;
+    }
+
+    button {
+      font-size: 18px;
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .rock { background-color: #4CAF50; color: white; }
+    .paper { background-color: #2196F3; color: white; }
+    .scissors { background-color: #FF5722; color: white; }
+
+    .result {
+      margin-top: 30px;
+      font-size: 20px;
+      color: #333;
+    }
+
+    .score {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #555;
+    }
+
+
+
+
+
+  </style>
+</head>
+<body>
+  <h1>Rock Paper Scissors</h1>
+  <div class="game-container">
+    <button class="rock" onclick="playGame('rock')">Rock</button>
+    <button class="paper" onclick="playGame('paper')">Paper</button>
+    <button class="scissors" onclick="playGame('scissors')">Scissors</button>
+  </div>
+
+  <div class="result" id="result"></div>
+  <div class="score" id="score">Player: 0 | Computer: 0</div>
+
+
+
+
+
+
+  <script>
+    let playerScore = 0;
+    let computerScore = 0;
+
+    function playGame(playerChoice) {
+      const choices = ['rock', 'paper', 'scissors'];
+      const computerChoice = choices[Math.floor(Math.random() * 3)];
+
+      let result = '';
+      if (playerChoice === computerChoice) {
+        result = `It's a tie! You both chose ${playerChoice}.`;
+      } else if (
+        (playerChoice === 'rock' && computerChoice === 'scissors') ||
+        (playerChoice === 'paper' && computerChoice === 'rock') ||
+        (playerChoice === 'scissors' && computerChoice === 'paper')
+      ) {
+        result = `You win! ${playerChoice} beats ${computerChoice}.`;
+        playerScore++;
+      } else {
+        result = `You lose! ${computerChoice} beats ${playerChoice}.`;
+        computerScore++;
+      }
+
+      document.getElementById('result').textContent = result;
+      document.getElementById('score').textContent = `Player: ${playerScore} | Computer: ${computerScore}`;
+    }
+    
+    
+    
+  </script>
+</body>
+</html>

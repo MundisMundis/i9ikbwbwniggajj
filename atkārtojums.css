@@ -1,0 +1,28 @@
+.m1 {
+    width: 300px;
+    padding: 50px;
+    margin: 20px;
+    border: yellow solid 25px;
+    background-color: yellow;
+    border-radius: 100px;
+  }
+
+  .m2 {
+    width: 300px;
+    padding: 50px;
+    margin: 20px;
+    border: rgb(94, 32, 94) solid 25px;
+    background-color: purple;
+    border-radius: 100px;
+  }
+
+  .m3 {
+    width: 300px;
+    padding: 50px;
+    margin: 20px;
+    border: rgb(213, 12, 12) solid 25px;
+    background-color: rgb(214, 3, 3);
+    border-radius: 100px;
+  }
+
+  

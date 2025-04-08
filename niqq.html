@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weird Furniture</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #222;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .gallery img {
+            width: 200px;
+            height: auto;
+            margin: 10px;
+            border: 2px solid #333;
+            border-radius: 10px;
+        }
+        button {
+            background-color: #222;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+    <link rel="stylesheet" href="niqq.js">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Weird Furniture</h1>
+        <p>Explore the most unusual furniture designs from around the world.</p>
+    </header>
+    <div class="container">
+        <section>
+            <h2>Fun Fact</h2>
+            <p id="fun-fact">Click the button to discover a fun fact!</p>
+            <button id="show-fact-btn">Show Fun Fact</button>
+        </section>
+        <section>
+            <h2>Gallery</h2>
+            <button id="toggle-gallery-btn">Toggle Gallery</button>
+            <div id="gallery" class="gallery">
+                <img src="weird-chair.jpg" alt="Weird Chair">
+                <img src="hot-dog-couch.jpg" alt="Hot Dog Couch">
+                <img src="tree-bookshelf.jpg" alt="Tree Bookshelf">
+                <img src="fish-tank-table.jpg" alt="Fish Tank Table">
+            </div>
+        </section>
+    </div>
+    <script src="niqq.js"></script>
+</body>
+</html>

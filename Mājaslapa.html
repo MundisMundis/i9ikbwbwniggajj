@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maikls Džordans</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    #container {
+      background-color: #222;
+      padding: 1em 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav a {
+      display: block;
+      padding: 1em;
+      color: white;
+      text-decoration: none;
+    }
+
+    nav ul li:hover {
+      background-color: #444;
+    }
+
+    nav ul ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #444;
+      min-width: 200px;
+      z-index: 1000;
+    }
+
+    nav ul li:hover > ul {
+      display: block;
+    }
+
+    nav ul ul li {
+      width: 100%;
+    }
+
+    nav ul ul ul {
+      left: 100%;
+      top: 0;
+    }
+
+    header {
+      padding: 2em;
+      text-align: center;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      color: #222;
+    }
+
+    main {
+      padding: 2em;
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+      margin-top: 2em;
+    }
+  </style>
+</head>
+<body>
+
+<div id="container">
+  <nav>
+    <ul>
+      <li><a href="index (5).html">Sākums</a></li>
+      <li>
+        <a href="egle.html">Egle</a>
+        <ul>
+          <li><a href="#">Themes</a></li>
+          <li><a href="#">Plugins</a></li>
+          <li><a href="#">Tutorials</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="index.html">Pogas</a>
+        <ul>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Links</a></li>
+          <li>
+            <a href="#">Tutorials</a>
+            <ul>
+              <li><a href="#">HTML/CSS</a></li>
+              <li><a href="#">jQuery</a></li>
+              <li>
+                <a href="#">Other</a>
+                <ul>
+                  <li><a href="#">Stuff</a></li>
+                  <li><a href="#">Things</a></li>
+                  <li><a href="#">Other Stuff</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="25.03.2025.html">JavaScript viktorīna</a></li>
+      <li><a href="#">Inspiration</a></li>
+      <li><a href="25.02.2025.html">Kontakti</a></li>
+      <li><a href="#">Par mums</a></li>
+    </ul>
+  </nav>
+</div>
+
+<header>
+  <h1>Maikls Džordans</h1>
+</header>
+
+<main>
+  <p>
+    Maikls Džordans ir viens no visu laiku izcilākajiem basketbolistiem. Viņš kļuva slavens, spēlējot NBA komandā
+    <strong>Chicago Bulls</strong>, un ieguva 6 čempionu titulus. Viņa ietekme uz sportu un kultūru joprojām ir jūtama arī šodien.
+  </p>
+
+  <p>
+    Viņš ir arī iedvesma daudziem sportistiem un cilvēkiem visā pasaulē. Papildus savam basketbola mantojumam, viņš ir veiksmīgs uzņēmējs, īpaši ar <em>Air Jordan</em> sporta apaviem.
+  </p>
+</main>
+
+<footer>
+  &copy; Edmunda Emš darbi
+</footer>
+
+</body>
+</html>
